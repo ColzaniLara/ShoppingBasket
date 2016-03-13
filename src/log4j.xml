@@ -19,11 +19,11 @@
 	    </layout>
 	</appender>
 	
-	<logger name="loggerSB" >
+	<!-- <logger name="loggerSB" >
    		<level value="debug" />
    		<appender-ref ref="logfile" />
 	</logger>
-	<!-- <root>
+	 <root>
 		<priority value="DEBUG" />
 		<appender-ref ref="logfile" />
 		
