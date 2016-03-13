@@ -17,6 +17,7 @@ public class Calculator {
 	
 		ShoppingBasket shoppingBasket= new ShoppingBasket();
 		logger.info("INPUT");
+		//System.out.println("INPUT");
 		for(int i=0; i<obj.length(); i++){
 			//logger.info("Input: "+(i+1));
 			JSONObject inputParams = obj.getJSONObject(i);
