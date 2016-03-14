@@ -18,18 +18,6 @@
 		  value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
 	    </layout>
 	</appender>
-	
-	<!-- <logger name="loggerSB" >
-   		<level value="debug" />
-   		<appender-ref ref="logfile" />
-	</logger>
-	 <root>
-		<priority value="DEBUG" />
-		<appender-ref ref="logfile" />
-		
-	</root>-->
-<!-- <appender-ref ref="SOCKET" />era in root-->
-	
 	<root>
 		<level value="DEBUG" />
 		<appender-ref ref="logfile" />
