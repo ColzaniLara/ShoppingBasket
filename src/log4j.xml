@@ -3,15 +3,15 @@
 
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
 	debug="true">
-	<!-- appender name="logfile" class="org.apache.log4j.RollingFileAppender">
-	     <param name="file" value="c:/logs/ShoppingBaskets.log" />
+	<appender name="logfile" class="org.apache.log4j.RollingFileAppender">
+	     <param name="file" value="${catalina.home}/logs/ShoppingBaskets.log" />
 	    <param name="MaxBackupIndex" value="50" />
 	    <param name="MaxFileSize" value="50MB" />
 	
 	    <layout class="org.apache.log4j.PatternLayout">
 	      <param name="ConversionPattern" value="%d %c{1} [%p] - %m%n" />
 	    </layout>
-	</appender-->
+	</appender>
 	<appender name="console" class="org.apache.log4j.ConsoleAppender">
 	    <layout class="org.apache.log4j.PatternLayout">
 		<param name="ConversionPattern" 
@@ -32,6 +32,7 @@
 	
 	<root>
 		<level value="DEBUG" />
+		<appender-ref ref="logfile" />
 		<appender-ref ref="console" />
 	</root>
 	
