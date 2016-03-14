@@ -48,7 +48,18 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
                 <configuration>        
                 </configuration>
                 <version>2.10</version>
-            </plugin>       
+            </plugin>  
+            
+            
+       <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.3-SNAPSHOT</version>
+        <configuration>
+          <server>myserver</server>
+        </configuration>
+      </plugin>
+                 
      <!--  <plugin>
       	<groupId>org.apache.maven.plugins</groupId>
       	<artifactId>maven-surefine-plugin</artifactId>

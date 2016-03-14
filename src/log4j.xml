@@ -4,7 +4,7 @@
 <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
 	debug="true">
 	<appender name="logfile" class="org.apache.log4j.RollingFileAppender">
-	     <param name="file" value="${catalina.home}/logs/ShoppingBaskets.log" />
+	    <param name="file" value="${catalina.home}/logs/ShoppingBaskets.log" />
 	    <param name="MaxBackupIndex" value="50" />
 	    <param name="MaxFileSize" value="50MB" />
 	
